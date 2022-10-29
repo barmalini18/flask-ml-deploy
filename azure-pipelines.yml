@@ -8,7 +8,7 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
- ### azureServiceConnectionId: '065b7c68-7ce7-42fe-ac89-73ac9ec4b5a2'
+  azureServiceConnectionId: 'ecbb9ec5-7aef-45a7-88f3-77e76f24abf6'
 
   # Web app name
 ###  webAppName: 'ia-housepriceapi'
