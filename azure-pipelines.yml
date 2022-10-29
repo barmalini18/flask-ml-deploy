@@ -4,13 +4,20 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
 variables:
-   appendCommitMessageToRunName: '68624f56-dcd2-420f-a833-253048e417a5'
+  # Azure Resource Manager connection created during pipeline creation
+  azureServiceConnectionId: '68624f56-dcd2-420f-a833-253048e417a5'
+  # Agent VM image name
+  vmImageName: 'ubuntu-latest'
+  # Web app name
+  webAppName: 'tb-housepriceapi'
+  # Environment name
+  environmentName: 'tb-housepriceapi'
 
 trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: $(vmImageName)
 
 steps:
 - script: echo Hello, world!
