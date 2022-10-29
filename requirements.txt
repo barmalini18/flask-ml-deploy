@@ -1,0 +1,7 @@
+Flask
+pandas
+scikit-learn==0.20.3
+joblib
+pylint
+pytest
+locust
